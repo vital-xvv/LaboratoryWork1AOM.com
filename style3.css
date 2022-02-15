@@ -1,0 +1,140 @@
+body {
+	font-family: 'Poppins', sans-serif;
+	font-family: 'Work Sans', sans-serif;
+	background-color: #1CD4F5;
+	color: white;
+	background: -webkit-linear-gradient(to right, #22D5FD, #FD9622);
+	background: linear-gradient(to right,  #DD2C4C, #2CDDAD);
+}
+
+#img {
+
+	background: white;
+	border:2px solid black;
+	border-radius: 4px;
+	display: block;
+	width: 25%;
+	text-align: center;
+
+
+}
+
+#head {
+	display: flex;
+	justify-content: space-between;
+}
+
+h1 {
+	display: block;
+	font-family: 'Poppins', sans-serif;
+	font-family: 'Work Sans', sans-serif;
+	color: white;
+	justify-content: center;
+	border: none;
+	margin-left: 15px;
+	background: none;
+
+}
+
+#but1 {
+	
+	display: block;
+	font-family: 'Poppins', sans-serif;
+	font-family: 'Work Sans', sans-serif;
+	color:  white;
+	font-size: 20px;
+	border-radius: 20px;
+	border: none;
+	font-size: 20px;
+	background: #D55BFF;
+	padding: 10px;
+	font-weight: 900;
+	width: 50%;
+	text-transform: uppercase;
+	margin: 20px auto;
+	transition: background 0.2s;
+}
+
+.input {
+
+	opacity: 0.7;
+	border-radius: 50px;
+	border: /*3px solid #252FCB*/ none;
+	font-size: 20px;
+	background-color: #FFFFFF;
+	padding: 10px;
+	font-weight: 300;
+	color: black;
+	margin-top: 5px;
+	margin-left: 15px;
+	width: 25%;
+	text-align: center;
+
+}
+
+
+
+
+
+
+#main {
+	margin-top: 20px;
+	display: flex;
+	justify-content: space-between;
+}
+
+#but1:hover {
+	background: #FF0C74;
+}
+
+#link1 {
+	text-decoration: none;
+	border-radius: 10px;
+	border: 3px solid #000000;
+	font-size: 17px;
+	background-color: #0CFFB5;
+	padding: 10px;
+	font-weight: 300;
+	color: black;
+	margin: auto 20px;
+	transition: opacity .2s, background 0.2s;
+}
+
+#link2{
+	text-decoration: none;
+	border-radius: 10px;
+	border: 3px solid #000000;
+	font-size: 17px;
+	background-color: #FF430C;
+	padding: 10px;
+	color: black;
+	margin: auto 20px;
+	transition:  background 0.2s;
+}
+
+#link1:hover{
+	background: #DD2C4C;
+	color: white;
+}
+#link2:hover{
+	background: #FD3622;
+	color: white;
+}
+
+#links {
+
+	display: flex;
+	justify-content: center;
+
+}
+
+#linksup {
+	margin-bottom: 20px;
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	z-index: 1;
+
+
+}

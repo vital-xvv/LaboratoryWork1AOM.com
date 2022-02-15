@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Labotatory work 1</title>
+		<script type="text/javascript" src="eel.js"></script>
+		<link rel="icon" type="image/png" href="/math.png">
+		<link rel="stylesheet" type="text/css" href="style3.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Poppins&family=Work+Sans&display=swap" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Poppins&family=Work+Sans:ital,wght@1,500&display=swap" rel="stylesheet">
+	</head>
+
+
+	<body>
+
+		<div id="head">
+			<h1>Iterational algorithm</h1>
+			<div id="img">
+			<img src="M.jpg">
+			</div>
+		</div>
+
+		<div id="main">
+			<input type="text" id="input2" class="input" placeholder="Type b:" required="">
+			<input type="text" id="input3" class="input" placeholder="Type n:" required="">
+		</div>
+		<button id="but1" onclick="alerted()">Calculate</button>
+
+		<div id="res"></div>
+
+		<script>
+			
+			function alerted() {
+				var b = parseFloat(document.getElementById('input2').value);
+				var n = parseFloat(document.getElementById('input3').value);
+
+				var restotal = 0;
+				var resres = 1;
+
+				for(let a = 1; a <= n; a++){
+
+					for(let j = 1; j <= a; j++){
+						restotal = Math.pow(a, j) + b/j + restotal;
+
+					}
+					resres = restotal*resres;
+					restotal = 0;
+				}
+				alert("f = "+resres);
+
+			}
+		</script>
+		<div id="linksup">
+			<div id = "links">
+				<div>	
+					<a href="index.html" id="link1">Linear algorithm</a>
+				</div>
+				<div>
+					<a href="App2.html" id="link2">Branching algorithm</a>
+				</div>
+			</div>
+		</div>
+
+	</body>
+</html>

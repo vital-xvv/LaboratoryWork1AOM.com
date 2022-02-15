@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Labotatory work 1</title>
+		<script type="text/javascript" src="eel.js"></script>
+		<link rel="icon" type="image/png" href="/math.png">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Poppins&family=Work+Sans&display=swap" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Poppins&family=Work+Sans:ital,wght@1,500&display=swap" rel="stylesheet">
+	</head>
+
+
+	<body>
+		<div id = "head">
+			<h1>Linear algorithm</h1>
+			<div id="img">
+				<img src="L2.jpg">
+			</div>
+		</div>
+
+		<div id="main">
+			<input type="text" id="input1" placeholder="Type a:" required="">
+			<input type="text" id="input2" placeholder="Type b:" required="">
+		</div>
+		<button id="but1" onclick="alerted()">Calculate</button>
+
+		<div id="res"></div>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script>
+			
+			function alerted() {
+				var a = parseFloat(document.getElementById('input1').value);
+				var b = parseFloat(document.getElementById('input2').value);
+				var res = Math.sqrt(Math.sin(a/6) + Math.cos(b/6)) + Math.sqrt(2*Math.sin(a/6)*Math.cos(b/6));
+				res = res.toString().substring(0,4);
+				alert('≈' + res);
+			}
+		</script>
+		<div id="linksup">
+			<div id = "links">
+				<div>	
+					<a href="App2.html" id="link1">Branching algorithm</a>
+				</div>
+				<div>
+					<a href="App3.html" id="link2">Iterational algorithm</a>
+				</div>
+			</div>
+		</div>
+
+	</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Labotatory work 1</title>
+		<script type="text/javascript" src="eel.js"></script>
+		<link rel="icon" type="image/png" href="/math.png">
+		<link rel="stylesheet" type="text/css" href="style2.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Poppins&family=Work+Sans&display=swap" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Poppins&family=Work+Sans:ital,wght@1,500&display=swap" rel="stylesheet">
+	</head>
+
+
+	<body>
+		<div id="head">
+			<h1>Branching algorithm</h1>
+			<div id="img">
+				<img src="B2.jpg">
+			</div>
+		</div>
+		<div id="main">
+			<input type="text" id="input1" placeholder="Type x:" required="">
+			<input type="text" id="input2" placeholder="Type k:" required="">
+		</div>
+		<button id="but1" onclick="alerted()">Calculate</button>
+
+		<div id="res"></div>
+
+		<script>
+			
+			function alerted() {
+				var x = parseFloat(document.getElementById('input1').value);
+				var k = parseFloat(document.getElementById('input2').value);
+				if(k <= 0 || x <= 0 ) {alert("Incorrect input");}
+				else {
+				var res = k*x*x*Math.log10(k*x) + Math.sqrt(x);
+				alert('y = ' + res);
+				}
+			}
+		</script>
+		<div id="linksup">
+			<div id = "links">
+				<div>	
+					<a href="index.html" id="link1">Linear algorithm</a>
+				</div>
+				<div>
+					<a href="App3.html" id="link2">Iterational algorithm</a>
+				</div>
+			</div>
+		</div>
+
+	</body>
+</html>
